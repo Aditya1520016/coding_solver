@@ -1,0 +1,50 @@
+Annanya Mishra
+  Kanpur, India |+91 9453373777| LinkedIn  | Github 
+Career Objective
+Aspiring Artificial Intelligence and Software Engineer with a solid foundation in machine learning, web development, and cloud computing. Passionate about building intelligent, user-centric solutions that solve real-world problems. We are excited to contribute to innovative projects in a growth-oriented organization
+leveraging my skills in Python, data science, and full-stack development. Seeking a challenging role where I can learn continuously, work on cutting-edge technologies, and drive meaningful impact through technology.
+ 
+Education
+Pranveer Singh Institute of Technology, Kanpur
+Bachelor of Technology (Computer Science and Engineering - Artificial Intelligence)
+•	CGPA: 7.7(Upto 5th Sem)
+      12/2022 Present
+ 
+•	Coursework: Operating Systems, Object-oriented programming (OOP), Database Management Systems (DBMS), Data Structures and Algorithms (DSA), Computer Networks
+Oxford Model Senior Secondary School, Kanpur
+Intermediate
+•	Percentage: 70%
+Oxford Model Senior Secondary School, Kanpur
+High School
+•	Percentage: 83.6%
+Projects
+YouTube Transcript Summarizer | React.js, HuggingFace, spaCy, YouTube API
+•	Built a system to extract YouTube video transcripts and generate concise summaries using Hugging Face models (BART, T5).
+•	Integrated YouTube Data API and spaCy to enable accurate transcript retrieval and NLP preprocessing.
+AI-Driven Health Diagnosis System | Python, Scikit-learn, Pandas, AWS SageMaker
+•	Trained ML models using Scikit-learn to predict medical conditions and visualized insights via Streamlit dashboards.
+•	Deployed on AWS SageMaker with optimized preprocessing using Pandas/NumPy for real-time diagnosis.
+EduSage – AI-Powered Learning Style Detector: ML-based system to detect learning styles and provide personalized study recommendations.
+  RetailShield AI: AI-powered fraud and cyber threat detection platform with real-time anomaly detection and interactive security dashboard.
+Skills
+Programming Languages: C/C++, Python, Java, JavaScript, SQL Web Technologies: HTML, CSS, React.js, Bootstrap CSS Databases: MySQL, MongoDB
+Machine Learning: Scikit-learn, Pandas, NumPy, Matplotlib, spaCy, Hugging Face Transformers
+Tools: Github, VS Code, Microsoft Office, Jupyter Notebook, Excel, Eclipse, AWS
+Soft Skills: Presentation, Public Speaking, Team collaboration, Time Management, Work Ethic
+Certifications
+•	Data Analytics and Visualization Job Simulation — Forage	12/2024
+•	Python (Basic) Certificate — HackerRank	06/2024
+•	Problem Solving Certificate — HackerRank	06/2024
+•	AWS Cloud Practitioner Essentials-AWS
+•	Salesforce Trailhead
+•	Technology Job Simulation-Deloitte
+Additional Information
+Languages: English (Fluent), Hindi (Native)
+Interests: Full-Stack Web Development, AI Research, Hackathon 
+Achievements
+- Career Catalyst 3.0 – The Ultimate Placement Drill (2025): Scored 232 in an all-India aptitude and coding competition. link
+- Sparkhton Hackathon (2025): Received Certificate of Appreciation for active participation and contribution. link
+-Inovest Hackathon 2025 – Submitted EduSage, an AI-based learning style detector; result pending.
+ -Adobe India Hackathon 2025-Certificate of Participation/Excellence. link
+
+

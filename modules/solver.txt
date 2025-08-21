@@ -1,0 +1,90 @@
+# modules/solver_module.py
+import os
+import re
+from typing import Dict, Tuple
+
+
+__all__ = ["generate_solution_code"]
+
+
+SOLUTIONS_DIR = os.path.join(os.getcwd(), "solutions")
+
+
+MOST_FREQ_EVEN_CODE = '''# Auto-generated solution for: Most Frequent Even Element
+# Expects the program to read the *raw* example input string via STDIN,
+# e.g., "nums = [0,1,2,2,4,4,1]", and prints the answer.
+
+
+def solve_input(input_text: str) -> str:
+    import re, ast
+    m = re.search(r"nums\s*=\s*(\[.*?\])", input_text)
+    arr = []
+    if m:
+        arr = ast.literal_eval(m.group(1))
+    # Compute most frequent even, tie -> smallest, none -> -1
+    evens = [x for x in arr if isinstance(x, int) and x % 2 == 0]
+    if not evens:
+        return str(-1)
+    from collections import Counter
+    c = Counter(evens)
+    maxf = max(c.values())
+    candidates = [k for k, v in c.items() if v == maxf]
+    ans = min(candidates)
+    return str(ans)
+
+
+if __name__ == "__main__":
+    import sys
+    raw = sys.stdin.read()
+    print(solve_input(raw).strip())
+'''
+
+
+
+UNKNOWN_FALLBACK_CODE = '''# Fallback solution stub (pattern not yet supported)
+# This file is a placeholder so the app can run without crashing.
+# It simply echoes the input. Extend solver_module.py to add more patterns.
+
+
+def solve_input(input_text: str) -> str:
+return input_text.strip()
+
+
+if __name__ == "__main__":
+import sys
+print(solve_input(sys.stdin.read()))
+'''
+
+
+
+
+def _detect_pattern(description: str, title: str) -> str:
+	text = f"{title}\n{description}".lower()
+	if re.search(r"most\s+frequent\s+even", text):
+		return "most_frequent_even"
+	return "unknown"
+
+
+
+
+def generate_solution_code(problem: Dict) -> Tuple[str, str, str]:
+	"""Generate solution code file based on detected pattern.
+	Returns (file_path, problem_key, status_message).
+	"""
+	os.makedirs(SOLUTIONS_DIR, exist_ok=True)
+
+	title = problem.get("title", "").strip()
+	description = problem.get("description", "").strip()
+
+	key = _detect_pattern(description, title)
+	if key == "most_frequent_even":
+		file_path = os.path.join(SOLUTIONS_DIR, "solution.py")
+		with open(file_path, "w", encoding="utf-8") as f:
+			f.write(MOST_FREQ_EVEN_CODE)
+		return file_path, key, "Generated solution for: Most Frequent Even Element"
+
+	# fallback
+	file_path = os.path.join(SOLUTIONS_DIR, "solution.py")
+	with open(file_path, "w", encoding="utf-8") as f:
+		f.write(UNKNOWN_FALLBACK_CODE)
+	return file_path, key, "Pattern not recognized yet. Wrote a fallback stub."
